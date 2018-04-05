@@ -12,6 +12,8 @@
 		67B7186E2075EBB800F180D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B7186C2075EBB800F180D8 /* Main.storyboard */; };
 		67B718702075EBB800F180D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B7186F2075EBB800F180D8 /* Assets.xcassets */; };
 		67B718732075EBB800F180D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B718712075EBB800F180D8 /* LaunchScreen.storyboard */; };
+		67B7187C2075EC3D00F180D8 /* ScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B7187B2075EC3D00F180D8 /* ScaleView.swift */; };
+		67B7187E2075F26E00F180D8 /* GradientScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B7187D2075F26E00F180D8 /* GradientScaleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		67B7186F2075EBB800F180D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67B718722075EBB800F180D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67B718742075EBB800F180D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67B7187B2075EC3D00F180D8 /* ScaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleView.swift; sourceTree = "<group>"; };
+		67B7187D2075F26E00F180D8 /* GradientScaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientScaleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		67B718672075EBB800F180D8 /* ScaleView */ = {
 			isa = PBXGroup;
 			children = (
+				67B7187A2075EC3D00F180D8 /* Views */,
 				67B718682075EBB800F180D8 /* AppDelegate.swift */,
 				67B7186A2075EBB800F180D8 /* ViewController.swift */,
 				67B7186C2075EBB800F180D8 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				67B718742075EBB800F180D8 /* Info.plist */,
 			);
 			path = ScaleView;
+			sourceTree = "<group>";
+		};
+		67B7187A2075EC3D00F180D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67B7187D2075F26E00F180D8 /* GradientScaleView.swift */,
+				67B7187B2075EC3D00F180D8 /* ScaleView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67B7187C2075EC3D00F180D8 /* ScaleView.swift in Sources */,
 				67B7186B2075EBB800F180D8 /* ViewController.swift in Sources */,
 				67B718692075EBB800F180D8 /* AppDelegate.swift in Sources */,
+				67B7187E2075F26E00F180D8 /* GradientScaleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
