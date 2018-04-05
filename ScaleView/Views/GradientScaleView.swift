@@ -59,15 +59,11 @@ import UIKit
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
         // Drawing code
-        guard drawMarksOnTop || drawMarksOnBottom else {
-            return
-        }
+        super.draw(rect)
         updateGradientContainerView()
-        
         let numberOfMarks = calculateNumberOfMarks()
         let size = bounds.size
         let distanceBetweenMark = (size.width - (2 * markStartFrom)) / CGFloat(numberOfMarks - 1)
-        let selectedMarkCount: UInt8 = needSelectedColorChange ? calculateSelectedMarkCount() : 0
         let gradientWidth = calculateWidthForGradientLayer(with: distanceBetweenMark)
         
         if gradientWidth == 0 {
@@ -80,49 +76,9 @@ import UIKit
         } else {
             initializeGradientLayer(with: CGSize(width: gradientWidth, height: size.height))
         }
-        
-        if selectedMarkCount > 0 {
-            selectedMarkColor.setFill()
-        } else {
-            markColor.setFill()
-        }
-        
-        var markValue = markValueStart
-        var fillColorSwitched = false
-        var isFirstMark = true
+        updateTrackImage()
         let rangeStart = CGPoint(x: 0, y: (frame.height - (slider?.frame.height ?? 0)) / 2)
         //var sliderWidth: CGFloat = 0
-        
-        for index in 0 ..< numberOfMarks {
-            if !fillColorSwitched && index >= selectedMarkCount {
-                markColor.setFill()
-                fillColorSwitched = true
-            }
-            let isMark = checkIfMark(index: index)
-            let width = isMark ? markWidth : subMarkWidth
-            let height = isMark ? markHeight : subMarkHeight
-            let x = (CGFloat(index) * distanceBetweenMark) + markStartFrom - (width / 2)
-            var y: CGFloat = 0
-            
-            if drawMarksOnTop {
-                UIRectFill(CGRect(x: x, y: y, width: width, height: height))
-            }
-            y = size.height - height
-            if drawMarksOnBottom {
-                UIRectFill(CGRect(x: x, y: y, width: width, height: height))
-            }
-            
-            if isMark {
-                markValue += markValueInterval
-                
-                if isFirstMark {
-                    //rangeStart = CGPoint(x: x, y: rangeStart.y)
-                    isFirstMark = false
-                }
-                //sliderWidth = x + width
-            }
-        }
-        updateTrackImage()
         //slider?.frame = CGRect(origin: rangeStart, size: CGSize(width: sliderWidth - rangeStart.x, height: slider?.frame.height ?? 0))
         slider?.frame = CGRect(origin: rangeStart, size: CGSize(width: frame.width, height: slider?.frame.height ?? 0))
     }

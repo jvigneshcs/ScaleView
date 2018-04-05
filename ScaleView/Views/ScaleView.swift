@@ -114,7 +114,11 @@ import UIKit
         return numberOfMarks
     }
     
-    func calculateSelectedMarkCount() -> UInt8 {
+    func widthUptoFirstMark(with distanceBetweenMark: CGFloat) -> CGFloat {
+        return subMarkBufferCount > 0 ? CGFloat(subMarkBufferCount + 1) * distanceBetweenMark : markStartFrom
+    }
+    
+    private func calculateSelectedMarkCount() -> UInt8 {
         var selectedMarkCount: UInt8 = 0
         if selectedValue == 0 {
             markColor.setFill()
@@ -130,15 +134,11 @@ import UIKit
         return selectedMarkCount
     }
     
-    func checkIfMark(index: UInt8) -> Bool {
+    private func checkIfMark(index: UInt8) -> Bool {
         if index < subMarkBufferCount {
             return false
         } else {
             return ((index - subMarkBufferCount) % (subMarkCount + 1) == 0)
         }
-    }
-    
-    func widthUptoFirstMark(with distanceBetweenMark: CGFloat) -> CGFloat {
-        return subMarkBufferCount > 0 ? CGFloat(subMarkBufferCount + 1) * distanceBetweenMark : markStartFrom
     }
 }
