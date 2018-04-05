@@ -26,12 +26,6 @@ import UIKit
     private var gradientContainerView: UIView!
     private var slider: UISlider!
     private var gradientLayer: CAGradientLayer?
-    private var markStartFrom: CGFloat = 0
-    private var defaultMarkCount: UInt8 = 10
-    
-    private var maximumAllowedValue: UInt8 {
-        return markValueStart + ((markCount - 1) * markValueInterval)
-    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)

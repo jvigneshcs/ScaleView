@@ -36,12 +36,13 @@ import UIKit
         }
     }
     
-    private var markStartFrom: CGFloat = 0
-    private var defaultMarkCount: UInt8 = 10
+    let markStartFrom: CGFloat = 0
     
-    private var maximumAllowedValue: UInt8 {
+    var maximumAllowedValue: UInt8 {
         return markValueStart + ((markCount - 1) * markValueInterval)
     }
+    
+    private var defaultMarkCount: UInt8 = 10
     
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
