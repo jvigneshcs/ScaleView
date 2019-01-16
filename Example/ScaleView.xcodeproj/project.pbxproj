@@ -12,24 +12,62 @@
 		67B7186E2075EBB800F180D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B7186C2075EBB800F180D8 /* Main.storyboard */; };
 		67B718702075EBB800F180D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B7186F2075EBB800F180D8 /* Assets.xcassets */; };
 		67B718732075EBB800F180D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B718712075EBB800F180D8 /* LaunchScreen.storyboard */; };
-		67B7187C2075EC3D00F180D8 /* ScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B7187B2075EC3D00F180D8 /* ScaleView.swift */; };
-		67B7187E2075F26E00F180D8 /* GradientScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B7187D2075F26E00F180D8 /* GradientScaleView.swift */; };
+		67C31B3821EF54B400EA2B1A /* ScaleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 67C31B3621EF54B400EA2B1A /* ScaleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67C31B3B21EF54B400EA2B1A /* ScaleView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C31B3421EF54B400EA2B1A /* ScaleView.framework */; };
+		67C31B3C21EF54B400EA2B1A /* ScaleView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67C31B3421EF54B400EA2B1A /* ScaleView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67C31B4721EF562C00EA2B1A /* GradientScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C31B4521EF562C00EA2B1A /* GradientScaleView.swift */; };
+		67C31B4821EF562C00EA2B1A /* ScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C31B4621EF562C00EA2B1A /* ScaleView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		67C31B3921EF54B400EA2B1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67B7185D2075EBB800F180D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67C31B3321EF54B400EA2B1A;
+			remoteInfo = ScaleView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		67C31B4021EF54B400EA2B1A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				67C31B3C21EF54B400EA2B1A /* ScaleView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		67B718652075EBB800F180D8 /* ScaleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScaleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B718652075EBB800F180D8 /* ScaleView-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ScaleView-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B718682075EBB800F180D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67B7186A2075EBB800F180D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67B7186D2075EBB800F180D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67B7186F2075EBB800F180D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67B718722075EBB800F180D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67B718742075EBB800F180D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67B7187B2075EC3D00F180D8 /* ScaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleView.swift; sourceTree = "<group>"; };
-		67B7187D2075F26E00F180D8 /* GradientScaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientScaleView.swift; sourceTree = "<group>"; };
+		67C31B3421EF54B400EA2B1A /* ScaleView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScaleView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C31B3621EF54B400EA2B1A /* ScaleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScaleView.h; sourceTree = "<group>"; };
+		67C31B3721EF54B400EA2B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67C31B4521EF562C00EA2B1A /* GradientScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GradientScaleView.swift; path = ../ScaleView/GradientScaleView.swift; sourceTree = "<group>"; };
+		67C31B4621EF562C00EA2B1A /* ScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScaleView.swift; path = ../ScaleView/ScaleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		67B718622075EBB800F180D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C31B3B21EF54B400EA2B1A /* ScaleView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C31B3121EF54B400EA2B1A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,7 +80,10 @@
 		67B7185C2075EBB800F180D8 = {
 			isa = PBXGroup;
 			children = (
+				67C31B4521EF562C00EA2B1A /* GradientScaleView.swift */,
+				67C31B4621EF562C00EA2B1A /* ScaleView.swift */,
 				67B718672075EBB800F180D8 /* ScaleView */,
+				67C31B3521EF54B400EA2B1A /* ScaleView */,
 				67B718662075EBB800F180D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,7 +91,8 @@
 		67B718662075EBB800F180D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				67B718652075EBB800F180D8 /* ScaleView.app */,
+				67B718652075EBB800F180D8 /* ScaleView-iOS.app */,
+				67C31B3421EF54B400EA2B1A /* ScaleView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,7 +100,6 @@
 		67B718672075EBB800F180D8 /* ScaleView */ = {
 			isa = PBXGroup;
 			children = (
-				67B7187A2075EC3D00F180D8 /* Views */,
 				67B718682075EBB800F180D8 /* AppDelegate.swift */,
 				67B7186A2075EBB800F180D8 /* ViewController.swift */,
 				67B7186C2075EBB800F180D8 /* Main.storyboard */,
@@ -69,25 +110,56 @@
 			path = ScaleView;
 			sourceTree = "<group>";
 		};
-		67B7187A2075EC3D00F180D8 /* Views */ = {
+		67C31B3521EF54B400EA2B1A /* ScaleView */ = {
 			isa = PBXGroup;
 			children = (
-				67B7187D2075F26E00F180D8 /* GradientScaleView.swift */,
-				67B7187B2075EC3D00F180D8 /* ScaleView.swift */,
+				67C31B3621EF54B400EA2B1A /* ScaleView.h */,
+				67C31B3721EF54B400EA2B1A /* Info.plist */,
 			);
-			path = Views;
+			path = ScaleView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		67C31B2F21EF54B400EA2B1A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C31B3821EF54B400EA2B1A /* ScaleView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		67B718642075EBB800F180D8 /* ScaleView */ = {
+		67B718642075EBB800F180D8 /* ScaleView-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67B718772075EBB800F180D8 /* Build configuration list for PBXNativeTarget "ScaleView" */;
+			buildConfigurationList = 67B718772075EBB800F180D8 /* Build configuration list for PBXNativeTarget "ScaleView-iOS" */;
 			buildPhases = (
 				67B718612075EBB800F180D8 /* Sources */,
 				67B718622075EBB800F180D8 /* Frameworks */,
 				67B718632075EBB800F180D8 /* Resources */,
+				67C31B4021EF54B400EA2B1A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67C31B3A21EF54B400EA2B1A /* PBXTargetDependency */,
+			);
+			name = "ScaleView-iOS";
+			productName = ScaleView;
+			productReference = 67B718652075EBB800F180D8 /* ScaleView-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67C31B3321EF54B400EA2B1A /* ScaleView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67C31B3D21EF54B400EA2B1A /* Build configuration list for PBXNativeTarget "ScaleView" */;
+			buildPhases = (
+				67C31B2F21EF54B400EA2B1A /* Headers */,
+				67C31B3021EF54B400EA2B1A /* Sources */,
+				67C31B3121EF54B400EA2B1A /* Frameworks */,
+				67C31B3221EF54B400EA2B1A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -95,8 +167,8 @@
 			);
 			name = ScaleView;
 			productName = ScaleView;
-			productReference = 67B718652075EBB800F180D8 /* ScaleView.app */;
-			productType = "com.apple.product-type.application";
+			productReference = 67C31B3421EF54B400EA2B1A /* ScaleView.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -110,6 +182,10 @@
 				TargetAttributes = {
 					67B718642075EBB800F180D8 = {
 						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					67C31B3321EF54B400EA2B1A = {
+						CreatedOnToolsVersion = 10.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,7 +203,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				67B718642075EBB800F180D8 /* ScaleView */,
+				67C31B3321EF54B400EA2B1A /* ScaleView */,
+				67B718642075EBB800F180D8 /* ScaleView-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -143,6 +220,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67C31B3221EF54B400EA2B1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -150,14 +234,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67B7187C2075EC3D00F180D8 /* ScaleView.swift in Sources */,
 				67B7186B2075EBB800F180D8 /* ViewController.swift in Sources */,
 				67B718692075EBB800F180D8 /* AppDelegate.swift in Sources */,
-				67B7187E2075F26E00F180D8 /* GradientScaleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C31B3021EF54B400EA2B1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C31B4721EF562C00EA2B1A /* GradientScaleView.swift in Sources */,
+				67C31B4821EF562C00EA2B1A /* ScaleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67C31B3A21EF54B400EA2B1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67C31B3321EF54B400EA2B1A /* ScaleView */;
+			targetProxy = 67C31B3921EF54B400EA2B1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		67B7186C2075EBB800F180D8 /* Main.storyboard */ = {
@@ -277,10 +376,13 @@
 		67B718782075EBB800F180D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ScaleView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vigneshjeyaraj.ScaleView;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vigneshjeyaraj.ScaleView-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -289,12 +391,90 @@
 		67B718792075EBB800F180D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ScaleView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vigneshjeyaraj.ScaleView;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vigneshjeyaraj.ScaleView-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		67C31B3E21EF54B400EA2B1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ScaleView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vigneshjeyaraj.ScaleView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		67C31B3F21EF54B400EA2B1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ScaleView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vigneshjeyaraj.ScaleView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -310,13 +490,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67B718772075EBB800F180D8 /* Build configuration list for PBXNativeTarget "ScaleView" */ = {
+		67B718772075EBB800F180D8 /* Build configuration list for PBXNativeTarget "ScaleView-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67B718782075EBB800F180D8 /* Debug */,
 				67B718792075EBB800F180D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67C31B3D21EF54B400EA2B1A /* Build configuration list for PBXNativeTarget "ScaleView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C31B3E21EF54B400EA2B1A /* Debug */,
+				67C31B3F21EF54B400EA2B1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

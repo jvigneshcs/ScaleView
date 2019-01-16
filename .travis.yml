@@ -1,0 +1,13 @@
+language: objective-c
+osx_image: xcode10.1
+xcode_project: Example/ScaleView.xcodeproj
+# xcode_workspace: <WORKSPACE_PLACEHOLDER>
+xcode_scheme: ScaleView
+xcode_sdk: iphonesimulator12.0
+
+# SWIFT_VERSION: 4.2
+
+# whitelist
+branches:
+only:
+- master
